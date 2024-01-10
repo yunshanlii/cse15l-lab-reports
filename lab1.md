@@ -5,7 +5,8 @@
    ```
    [user@sahara ~/lecture1/messages]$ cd
    [user@sahara ~]$ 
-   ```   
+   ```
+   When used with no argument, the cd command exits all current directories and returns to the /home directory 
 3. path to a directory as an argument
 4. path to a file as an argument
 
