@@ -20,7 +20,7 @@
    [user@sahara ~/lecture1/messages]$ cd en-us.txt
    bash: cd: en-us.txt: Not a directory
    ```
-   When  used with a path to a file as an argument, the cd command will result in an "Not a directory" error as the cd command can not make a file the current working directory.
+   When  used with a path to a file as an argument, the cd command will result in a "Not a directory" error as the cd command can not make a file the current working directory.
 
 ## **ls command**
 > The list command-line command is used to list all the files in the working directory
@@ -57,7 +57,7 @@
    hello world!
    ^C
     ```
-   When used with no argument, the cat command will display the user input over and over until control-c is pressed to stop the cycle.
+   When used with no argument, the cat command will prompt for user input and output the input over and over until control-c is pressed to stop the cycle.
    
 3. path to a directory as an argument
    
