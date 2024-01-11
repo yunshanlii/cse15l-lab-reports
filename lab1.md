@@ -25,8 +25,16 @@
 ## **ls command**
 > The list command-line command is used to list all the files in the working directory
 1. no argument
+   ```
+   [user@sahara ~]$ ls
+   lecture1
+   [user@sahara ~]$ cd lecture1
+   [user@sahara ~/lecture1]$ ls
+   Hello.class  Hello.java  messages  README
+   ```
+   When used with no argument, the ls command prints out the names of all the directories and files in the current working directory.
 2. path to a directory as an argument
-3. path to a file as an argument
+4. path to a file as an argument
      
 ## **cat command**
 > The cat command-line command is used to 
