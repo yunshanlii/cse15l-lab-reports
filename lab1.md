@@ -68,8 +68,30 @@
    
 3. path to a file as an argument
    ```
-   [user@sahara ~]$ cat lecture1
-   cat: lecture1: Is a directory
+   #single txt file as argument
+   [user@sahara ~/lecture1/messages]$ cat en-us.txt
+   Hello World!
+
+   #multiple txt file as argument
+   [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
+   Hello World!
+   ¡Hola Mundo!
+   你好世界
+
+   [user@sahara ~/lecture1/messages]$ cd ..
+
+   #.java file as argument
+   [user@sahara ~/lecture1]$ cat Hello.java
+   import java.io.IOException;
+   import java.nio.charset.StandardCharsets;
+   import java.nio.file.Files;
+   import java.nio.file.Path;
+
+   public class Hello {
+     public static void main(String[] args) throws IOException {
+       String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+       System.out.println(content);
+     }
     ```
      
 
