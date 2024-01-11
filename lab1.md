@@ -57,15 +57,13 @@
    hello world!
    ^C
     ```
-   When used with no argument, the cat command will prompt for user input and output the input over and over until control-c is pressed to stop the cycle.
-   
+   When used with no argument, the cat command will prompt for user input and output the input over and over until control-c is pressed to stop the cycle.   
 2. path to a directory as an argument
    ```
    [user@sahara ~]$ cat lecture1
    cat: lecture1: Is a directory
     ```
-   When used with a directory as an argument, the cat command will display that the argument directory is a directory; therefore, the cat command can not concatenate the directory. 
-   
+   When used with a directory as an argument, the cat command will display that the argument directory is a directory; therefore, the cat command can not concatenate the directory.    
 3. path to a file as an argument
    ```
    #single txt file as argument
