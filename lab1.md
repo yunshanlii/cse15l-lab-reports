@@ -49,15 +49,19 @@
    When used with a path to a file as an argument, the ls command will result in a "No such file or directory" error as the file does not contain any files or directories to list. 
      
 ## **cat command**
-> The cat command-line command is used to 
+> The cat command-line command stands for concatenate and can be used to concatenate the contents of multiple files and print the contents of a single file.  
 1. no argument
    ```
-   [user@sahara ~/lecture1/messages]$ ls en-us
-   ls: cannot access 'en-us': No such file or directory
+   [user@sahara ~]$ cat
+   hello world!
+   hello world!
+   ^C
     ```
+   When used with no argument, the cat command will display the user input over and over until control-c is pressed to stop the cycle.
    
 3. path to a directory as an argument
-4. path to a file as an argument
+   
+5. path to a file as an argument
      
 
      
