@@ -64,7 +64,7 @@
    [user@sahara ~]$ cat lecture1
    cat: lecture1: Is a directory
     ```
-When used with a directory as an argument, the cat command will display that the argument directory is a directory; therefore, the cat command can not concatenate the directory. 
+   When used with a directory as an argument, the cat command will display that the argument directory is a directory; therefore, the cat command can not concatenate the directory. 
    
 3. path to a file as an argument
    ```
