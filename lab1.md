@@ -69,15 +69,15 @@
    #single txt file as argument
    [user@sahara ~/lecture1/messages]$ cat en-us.txt
    Hello World!
-
+     ```
+   ```
    #multiple txt file as argument
    [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
    Hello World!
    ¡Hola Mundo!
    你好世界
-
-   [user@sahara ~/lecture1/messages]$ cd ..
-
+     ```
+   ```
    #.java file as argument
    [user@sahara ~/lecture1]$ cat Hello.java
    import java.io.IOException;
