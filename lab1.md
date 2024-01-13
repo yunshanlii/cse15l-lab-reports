@@ -77,7 +77,7 @@
    ¡Hola Mundo!
    你好世界
      ```
-   ```
+  ```
    #.java file as argument
    [user@sahara ~/lecture1]$ cat Hello.java
    import java.io.IOException;
@@ -90,7 +90,9 @@
        String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
        System.out.println(content);
      }
-    ```
+     ```
+   
+
    
      
 
