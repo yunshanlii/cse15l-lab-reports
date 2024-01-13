@@ -65,6 +65,7 @@
     ```
    When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, the ```cat``` command can not concatenate the directory.
 3. path to a file as an argument
+   
    ```
    #single file as argument
    [user@sahara ~/lecture1]$ cat Hello.java
@@ -79,8 +80,7 @@
        System.out.println(content);
      }
    }
-
-   ```
+     ```
    
    ```
    #multiple file as argument
