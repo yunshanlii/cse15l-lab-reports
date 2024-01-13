@@ -78,7 +78,6 @@
    你好世界
      ```
    ```
-   #.java file as argument
    [user@sahara ~/lecture1]$ cat Hello.java
    import java.io.IOException;
    import java.nio.charset.StandardCharsets;
