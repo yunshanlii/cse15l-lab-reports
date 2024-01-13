@@ -66,18 +66,7 @@
    When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, the ```cat``` command can not concatenate the directory.
 3. path to a file as an argument
    ```
-   #single txt file as argument
-   [user@sahara ~/lecture1/messages]$ cat en-us.txt
-   Hello World!
-     ```
-   ```
-   #multiple txt file as argument
-   [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
-   Hello World!
-   ¡Hola Mundo!
-   你好世界
-     ```
-   ```
+   #single file as argument
    [user@sahara ~/lecture1]$ cat Hello.java
    import java.io.IOException;
    import java.nio.charset.StandardCharsets;
@@ -89,7 +78,15 @@
        String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
        System.out.println(content);
      }
+     ```
    ```
+   #multiple file as argument
+   [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
+   Hello World!
+   ¡Hola Mundo!
+   你好世界
+     ```
+
    
 
    
