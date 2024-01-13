@@ -78,7 +78,10 @@
        String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
        System.out.println(content);
      }
-     ```
+   }
+
+   ```
+   
    ```
    #multiple file as argument
    [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
