@@ -20,10 +20,10 @@
    [user@sahara ~/lecture1/messages]$ cd en-us.txt
    bash: cd: en-us.txt: Not a directory
    ```
-   When  used with a path to a file as an argument, the cd command will result in a "Not a directory" error as the cd command can not make a file the current working directory.
+   When  used with a path to a file as an argument, the ```cd``` command will result in a "Not a directory" error as the ```cd``` command can not make a file the current working directory.
 
 ## **ls command**
-> The list command-line command is used to list all the files in the working directory
+> The ```ls``` command-line command is used to list all the files in the working directory
 1. no argument
    ```
    [user@sahara ~]$ ls
@@ -32,7 +32,7 @@
    [user@sahara ~/lecture1]$ ls
    Hello.class  Hello.java  messages  README
    ```
-   When used with no argument, the ls command prints out the names of all the directories and files in the current working directory.
+   When used with no argument, the ```ls``` command prints out the names of all the directories and files in the current working directory.
 2. path to a directory as an argument
    ```
    [user@sahara ~]$ ls lecture1
@@ -40,16 +40,16 @@
    [user@sahara ~/lecture1]$ ls messages
    en-us.txt  es-mx.txt  ko-kr.txt  zh-cn.txt
    ```
-   When used with a path to a directory as an argument, the ls command prints out the names of all the directories (in blue) and files in the directory specified in the argument. However, the argument directory must be directly within the current working directory to avoid error. 
-3. path to a file as an argument (fix)
+   When used with a path to a directory as an argument, the ```ls``` command prints out the names of all the directories (in blue) and files in the directory specified in the argument. However, the argument directory must be directly within the current working directory to avoid error. 
+3. path to a file as an argument
     ```
-   [user@sahara ~/lecture1/messages]$ ls en-us
-   ls: cannot access 'en-us': No such file or directory
+   [user@sahara ~/lecture1/messages]$ ls en-us.txt
+   en-us.txt
    ```
-   When used with a path to a file as an argument, the ls command will result in a "No such file or directory" error as the file does not contain any files or directories to list. 
+   When used with a path to a file as an argument, the ```ls``` command will output the name of the file. 
      
 ## **cat command**
-> The cat command-line command stands for concatenate and can be used to concatenate the contents of multiple files and print the contents of a single file.  
+> The ```cat``` command-line command stands for concatenate and can be used to concatenate the contents of multiple files and print the contents of a single file.  
 1. no argument
    ```
    [user@sahara ~]$ cat
@@ -57,13 +57,13 @@
    hello world!
    ^C
     ```
-   When used with no argument, the cat command will prompt for user input and output the input over and over until control-c is pressed to stop the cycle.   
+   When used with no argument, the ```cat``` command will prompt for user input and output the input over and over until ```Ctrl+C``` is pressed to stop the cycle.   
 2. path to a directory as an argument
    ```
    [user@sahara ~]$ cat lecture1
    cat: lecture1: Is a directory
     ```
-   When used with a directory as an argument, the cat command will display that the argument directory is a directory; therefore, the cat command can not concatenate the directory.
+   When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, the ```cat``` command can not concatenate the directory.
 3. path to a file as an argument
    ```
    #single txt file as argument
