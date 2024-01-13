@@ -80,16 +80,13 @@
        System.out.println(content);
      }
    }
-     ```
-   
-   ```
+
    #multiple file as argument
    [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
    Hello World!
    ¡Hola Mundo!
    你好世界
      ```
-
    
 
    
