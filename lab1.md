@@ -67,7 +67,6 @@
 3. path to a file as an argument
    
    ```
-   #single file as argument
    [user@sahara ~/lecture1]$ cat Hello.java
    import java.io.IOException;
    import java.nio.charset.StandardCharsets;
@@ -80,8 +79,8 @@
        System.out.println(content);
      }
    }
-
-   #multiple file as argument
+     ```
+   ```
    [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
    Hello World!
    ¡Hola Mundo!
