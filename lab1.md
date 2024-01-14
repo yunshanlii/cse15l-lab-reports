@@ -79,13 +79,14 @@
        System.out.println(content);
      }
    }
-     ```
-   ```
+
+   ```   
+```
    [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
    Hello World!
    ¡Hola Mundo!
    你好世界
-     ```
+   ```
    When used with a file as an argument, the ```cat``` command will output the content of the argument file. When multiple files are used as the argument, the ```cat``` command will output the contents of the files in the order they are named. 
    
 
