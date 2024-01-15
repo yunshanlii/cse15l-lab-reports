@@ -53,8 +53,14 @@
 1. no argument
    ```
    [user@sahara ~]$ cat
-   hello world!
-   hello world!
+   Hello
+   Hello
+   Hi
+   Hi
+   Stop
+   Stop
+   No
+   No
    ^C
     ```
    When used with no argument, the ```cat``` command will prompt for user input and output the input over and over until ```Ctrl+C``` is pressed to stop the cycle.   
