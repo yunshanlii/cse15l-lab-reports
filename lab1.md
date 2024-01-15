@@ -88,12 +88,12 @@
       
     When used with a file as an argument, the ```cat``` command will output the content of the argument file.
    
-    ```  
-      [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
-      Hello World!
-      ¡Hola Mundo!
-      你好世界
-     ```
+       ```  
+         [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
+         Hello World!
+         ¡Hola Mundo!
+         你好世界
+       ```
    
    When multiple files are used as arguments, the ```cat``` command will output the contents of the files in the order they were named. 
    
