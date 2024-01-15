@@ -71,8 +71,7 @@
     ```
    When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, the ```cat``` command can not concatenate the directory.
 3. path to a file as an argument
-   
-   ```
+      ```
       [user@sahara ~/lecture1]$ cat Hello.java
       import java.io.IOException;
       import java.nio.charset.StandardCharsets;
@@ -86,7 +85,7 @@
         }
       }
       ```
-   When used with a file as an argument, the ```cat``` command will output the content of the argument file.
+    When used with a file as an argument, the ```cat``` command will output the content of the argument file.
     ```  
       [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
       Hello World!
