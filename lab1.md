@@ -72,18 +72,18 @@
    When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, the ```cat``` command can not concatenate the directory.
 3. path to a file as an argument
    ```
-   [user@sahara ~/lecture1]$ cat Hello.java
-   import java.io.IOException;
-   import java.nio.charset.StandardCharsets;
-   import java.nio.file.Files;
-   import java.nio.file.Path;
+      [user@sahara ~/lecture1]$ cat Hello.java
+      import java.io.IOException;
+      import java.nio.charset.StandardCharsets;
+      import java.nio.file.Files;
+      import java.nio.file.Path;
 
-   public class Hello {
-      public static void main(String[] args) throws IOException {
-          String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
-          System.out.println(content);
+      public class Hello {
+         public static void main(String[] args) throws IOException {
+            String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+            System.out.println(content);
+         }
       }
-   }
    ```     
    
    ```  
