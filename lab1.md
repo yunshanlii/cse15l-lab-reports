@@ -1,5 +1,5 @@
 # Lab Report 1 - Remote Acess and FileSystem
-## ** cd command**
+## **cd command**
 > The ```cd``` command-line command is used to change the working directory
 1. no argument
    ```
