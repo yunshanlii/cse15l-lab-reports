@@ -40,7 +40,7 @@
    [user@sahara ~/lecture1]$ ls messages
    en-us.txt  es-mx.txt  ko-kr.txt  zh-cn.txt
    ```
-   When used with a path to a directory as an argument, the ```ls``` command prints out the names of all the directories (in blue) and files in the directory specified in the argument. There is not error. However, the argument directory must be directly within the current working directory to avoid error. 
+   When used with a path to a directory as an argument, the ```ls``` command prints out the names of all the directories (in blue) and files in the directory specified in the argument. There is no error. However, the argument directory must be directly within the current working directory to avoid error. 
 3. path to a file as an argument
     ```
    [user@sahara ~/lecture1/messages]$ ls en-us.txt
