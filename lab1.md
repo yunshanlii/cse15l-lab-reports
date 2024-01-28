@@ -70,7 +70,7 @@
    cat: lecture1: Is a directory
     ```
    The current working directory is ```/home```. When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, there is an error as the ```cat``` command can not concatenate a directory.
-3. path to a file as an argument
+> 3. path to a file as an argument
    
    ```
    [user@sahara ~/lecture1]$ cat Hello.java
