@@ -21,6 +21,7 @@
    bash: cd: en-us.txt: Not a directory
    ```
    The current working directory is ```/home```. When used with a path to a file as an argument, the ```cd``` command will result in a "Not a directory" error as the ```cd``` command can not make a file the current working directory.
+>
 
 ## **ls command**
 > The ```ls``` command-line command is used to list all the files in the working directory
@@ -46,7 +47,8 @@
    [user@sahara ~/lecture1/messages]$ ls en-us.txt
    en-us.txt
    ```
-   The current working directory is ```~/lecture1/messages```. When used with a path to a file as an argument, the ```ls``` command will output the name of the file. There is no error. 
+   The current working directory is ```~/lecture1/messages```. When used with a path to a file as an argument, the ```ls``` command will output the name of the file. There is no error.
+>
      
 ## **cat command**
 > The ```cat``` command-line command stands for concatenate and can be used to concatenate the contents of multiple files and print the contents of a single file.  
@@ -70,7 +72,7 @@
    cat: lecture1: Is a directory
     ```
    The current working directory is ```/home```. When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, there is an error as the ```cat``` command can not concatenate a directory.
-> 3. path to a file as an argument
+3. path to a file as an argument
    
    ```
    [user@sahara ~/lecture1]$ cat Hello.java
@@ -95,7 +97,8 @@
    你好世界
    ```
    
-   The current working directory is ```~/lecture1```. When used with a file as an argument, the ```cat``` command will output the content of the argument file. When multiple files are used as arguments from the ```~/lecture1/messages``` directory, the ```cat``` command will output the contents of the files in the order they were named. There is no error. 
+   The current working directory is ```~/lecture1```. When used with a file as an argument, the ```cat``` command will output the content of the argument file. When multiple files are used as arguments from the ```~/lecture1/messages``` directory, the ```cat``` command will output the contents of the files in the order they were named. There is no error.
+>
    
 
    
