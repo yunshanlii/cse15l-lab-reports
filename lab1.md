@@ -73,7 +73,6 @@
     ```
    The current working directory is ```/home```. When used with a directory as an argument, the ```cat``` command will display that the argument directory is a directory; therefore, there is an error as the ```cat``` command can not concatenate a directory.
 3. path to a file as an argument
->
    ```
    [user@sahara ~/lecture1]$ cat Hello.java
    import java.io.IOException;
@@ -87,18 +86,15 @@
          System.out.println(content);
       }
    }
-   
-   ```
+    ```
    
    ```  
    [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
    Hello World!
    ¡Hola Mundo!
    你好世界
-   ```
-   
+    ```
    The current working directory is ```~/lecture1```. When used with a file as an argument, the ```cat``` command will output the content of the argument file. When multiple files are used as arguments from the ```~/lecture1/messages``` directory, the ```cat``` command will output the contents of the files in the order they were named. There is no error.
->
    
 
    
