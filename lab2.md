@@ -19,7 +19,7 @@ In this example, the ```handleRequest``` method is called again and takes the us
 ![Image](loginwithoutkey.png)
 
 ## Part 3
-In week 2 I learned how to use ```ssh``` to connect to a remote server from my computer, specifically the ieng6 server. This is supplemented my week 3, when I learned to access my ieng6 account with a private key without the use of my password. In addition, I gained a better understanding of how to build and run a server. For example, I learned how to program different paths to my server and use the query to retrieve user input. Furthermore, I learned that others on the same network can acess my server and their changes is reflected for everyone on the server. 
+In week 2 I learned how to use ```ssh``` to connect to a remote server from my computer, specifically the ieng6 server. This is supplemented by week 3 when I learned to access my ieng6 account with a private key without the use of my password. In addition, I gained a better understanding of how to build and run a server. For example, I learned how to program different paths to my server and use the query to retrieve user input. Furthermore, I learned that others on the same network can access my server and their changes are reflected for everyone on the server. 
 
 
 
