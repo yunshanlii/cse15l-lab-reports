@@ -73,26 +73,26 @@
 3. path to a file as an argument
    
    ```
-      [user@sahara ~/lecture1]$ cat Hello.java
-      import java.io.IOException;
-      import java.nio.charset.StandardCharsets;
-      import java.nio.file.Files;
-      import java.nio.file.Path;
+   [user@sahara ~/lecture1]$ cat Hello.java
+   import java.io.IOException;
+   import java.nio.charset.StandardCharsets;
+   import java.nio.file.Files;
+   import java.nio.file.Path;
 
-      public class Hello {
-         public static void main(String[] args) throws IOException {
-            String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
-            System.out.println(content);
-         }
+   public class Hello {
+      public static void main(String[] args) throws IOException {
+         String content = Files.readString(Path.of(args[0]), StandardCharsets.UTF_8);    
+         System.out.println(content);
       }
+   }
    
    ```
    
    ```  
-      [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
-      Hello World!
-      ¡Hola Mundo!
-      你好世界
+   [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
+   Hello World!
+   ¡Hola Mundo!
+   你好世界
    ```
    
    The current working directory is ```~/lecture1```. When used with a file as an argument, the ```cat``` command will output the content of the argument file. When multiple files are used as arguments from the ```~/lecture1/messages``` directory, the ```cat``` command will output the contents of the files in the order they were named. There is no error. 
