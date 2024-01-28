@@ -86,7 +86,7 @@
          }
       }
    
-   ```     
+   ```
    
    ```  
       [user@sahara ~/lecture1/messages]$ cat en-us.txt es-mx.txt zh-cn.txt
