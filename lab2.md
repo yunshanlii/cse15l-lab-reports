@@ -11,9 +11,11 @@ In this example, the ```handleRequest``` method is called again and takes the us
 ## Part 2
 ### Absolute path to the private key
 ![Image](privatekey.png)
+The absolute path to the ```private key``` is ```/Users/sophialee/.ssh/id_rsa```.
 
 ### Absolute path to the public key
 ![Image](publickey.png)
+The absolute path to the ```private key``` is ```/home/linux/ieng6/oce/7f/yul278/.ssh/authorized_keys```.
 
 ### Login without password
 ![Image](loginwithoutkey.png)
