@@ -102,4 +102,6 @@ static List<String> merge(List<String> list1, List<String> list2) {
   }
 ```
 
+In the third while loop, index1 was incorrectly incremented when index2 is the one that should be incremented when adding the remaining elements of list2 to the result list. This mistake causes an out-of-memory exception as the while loop is never exited and the same element from list2 is repeatedly added to the result list until there is no more memory in the heap.
+
 
