@@ -104,4 +104,22 @@ static List<String> merge(List<String> list1, List<String> list2) {
 
 In the third while loop, ```index1``` was incorrectly incremented when ```index2``` is the one that should be incremented when adding the remaining elements of ```list2``` to the ```result``` list. This mistake causes an ```out-of-memory exception``` as the while loop is never exited and the same element from ```list2``` is repeatedly added to the ```result``` list until there is no more memory in the heap.
 
+## Part 2
+### ```grep -e``` command 
+
+The ```grep -e``` command is used to find a specific pattern of characters in a single or multiple files. (Found through ```man grep```)
+
+#### Used on files:
+```
+sophialee@sophias-air-4 docsearch % grep -e "common" ./technical/biomed/rr37.txt ./technical/biomed/rr73.txt
+
+./technical/biomed/rr37.txt:        Asthma is a common condition in general medical
+./technical/biomed/rr73.txt:        in vivo tissue contraction, a common
+```
+The ```grep -e``` command is used from the ```docsearch``` directory to find the word pattern "common" from ```./technical/biomed/rr37.txt``` and ```./technical/biomed/rr73.txt```. The command outputs the occurrence of "common" in the specified files. 
+
+#### Used on directories:
+
+
+
 
