@@ -115,7 +115,7 @@ sophialee@sophias-air-4 docsearch % grep -r "common" ./technical/biomed/rr37.txt
 ./technical/biomed/rr37.txt:        Asthma is a common condition in general medical
 ./technical/biomed/rr73.txt:        in vivo tissue contraction, a common
 ```
-The ```grep -r``` command is used from the ```docsearch``` directory to find the word pattern "common" from files ```./technical/biomed/rr37.txt``` and ```./technical/biomed/rr73.txt```. The command outputs the occurrences of "common" in the specified files. 
+The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common" from files ```./technical/biomed/rr37.txt``` and ```./technical/biomed/rr73.txt```. The command outputs the occurrences of "common" in the specified files. 
 
 #### Used on directories:
 ```
@@ -126,7 +126,16 @@ sophialee@sophias-air-4 docsearch % grep -r "common type" ./technical/biomed
 ./technical/biomed/gb-2002-3-3-research0011.txt:          There are three common types of values that can be
 ./technical/biomed/1471-2164-2-4.txt:        polymorphisms (SNPs), the most common type of human genetic
 ```
-The ```grep -r``` command is used from the ```docsearch``` directory to find the word pattern "common" from the ```./technical/biomed``` directory. The command outputs the occurrences of "common" in the specified files. The command outputs the occurrences of "common" in the specified directories. 
+The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common type" from the ```./technical/biomed``` directory. The command outputs the occurrences of "common" in the specified files. The command outputs the occurrences of "common type" in the specified directory. 
+
+### ```grep -c``` command 
+
+The ```grep -c``` command is used to count the number of occurrences of a character pattern in a specified file or multiple files. (Found through ```man grep```)
+
+#### Used on files:
+
+
+
 
 
 
