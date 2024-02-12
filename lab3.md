@@ -160,7 +160,47 @@ sophialee@sophias-air-4 docsearch % grep -c "approve" -r ./technical/government/
 ```
 The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be able to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrence of "approve" in each file. 
 
-### ```grep -
+### ```grep -v```
+
+#### Used on file:
+```
+sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" ./technical/biomed/1471-2334-3-13.txt
+
+  
+    
+      
+        
+          Testing the hypothesis
+          (directly or indirectly) to 
+        
+        
+          including 
+          E. coli O157:H7 [ 9 ] . Although
+          Furthermore, this 
+          (verotoxin-producing) 
+          E. coli [ 30 31 ] . This
+          E. coli .
+        
+        
+          O157-specific; This number does not include the
+          E. coli K-12
+          genomes
+          function.
+          Streptococcus gordonii : [ 35 ] )
+          Further testing of this hypothesis will require
+          wrote:
+          
+          
+        
+        
+          If 
+        
+      
+      
+        Competing interests
+```
+
+
 
 
 
