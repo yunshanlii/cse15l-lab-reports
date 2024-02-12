@@ -161,43 +161,76 @@ sophialee@sophias-air-4 docsearch % grep -c "approve" -r ./technical/government/
 The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be able to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrence of "approve" in each file. 
 
 ### ```grep -v```
+The ```grep -v``` command is used to print the lines without the indicated character pattern in a file or multiple files. (Found through ```man grep```)
 
 #### Used on file:
 ```
-sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" ./technical/biomed/1471-2334-3-13.txt
-
-  
-    
-      
-        
-          Testing the hypothesis
-          (directly or indirectly) to 
-        
-        
-          including 
-          E. coli O157:H7 [ 9 ] . Although
-          Furthermore, this 
-          (verotoxin-producing) 
-          E. coli [ 30 31 ] . This
-          E. coli .
-        
-        
-          O157-specific; This number does not include the
-          E. coli K-12
-          genomes
-          function.
-          Streptococcus gordonii : [ 35 ] )
-          Further testing of this hypothesis will require
-          wrote:
-          
-          
-        
-        
-          If 
-        
-      
-      
-        Competing interests
+sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" ./technical/biomed/1471-2490-3-2.txt ./technical/biomed/1471-2334-3-13.txt
+./technical/biomed/1471-2490-3-2.txt:
+./technical/biomed/1471-2490-3-2.txt:  
+./technical/biomed/1471-2490-3-2.txt:    
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:        Methods
+./technical/biomed/1471-2490-3-2.txt:        to the lower border of symphysis pubis using 5 mm
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:        Results
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:        Discussion
+./technical/biomed/1471-2490-3-2.txt:        on this subject.
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:        Conclusion
+./technical/biomed/1471-2490-3-2.txt:        diverticulitis.
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:        Competing interests
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:        Authors' contribution
+./technical/biomed/1471-2490-3-2.txt:        writing
+./technical/biomed/1471-2490-3-2.txt:      
+./technical/biomed/1471-2490-3-2.txt:    
+./technical/biomed/1471-2490-3-2.txt:  
+./technical/biomed/1471-2334-3-13.txt:
+./technical/biomed/1471-2334-3-13.txt:  
+./technical/biomed/1471-2334-3-13.txt:    
+./technical/biomed/1471-2334-3-13.txt:      
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:          Testing the hypothesis
+./technical/biomed/1471-2334-3-13.txt:          (directly or indirectly) to 
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:          including 
+./technical/biomed/1471-2334-3-13.txt:          E. coli O157:H7 [ 9 ] . Although
+./technical/biomed/1471-2334-3-13.txt:          Furthermore, this 
+./technical/biomed/1471-2334-3-13.txt:          (verotoxin-producing) 
+./technical/biomed/1471-2334-3-13.txt:          E. coli [ 30 31 ] . This
+./technical/biomed/1471-2334-3-13.txt:          E. coli .
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:          O157-specific; This number does not include the
+./technical/biomed/1471-2334-3-13.txt:          E. coli K-12
+./technical/biomed/1471-2334-3-13.txt:          genomes
+./technical/biomed/1471-2334-3-13.txt:          function.
+./technical/biomed/1471-2334-3-13.txt:          Streptococcus gordonii : [ 35 ] )
+./technical/biomed/1471-2334-3-13.txt:          Further testing of this hypothesis will require
+./technical/biomed/1471-2334-3-13.txt:          wrote:
+./technical/biomed/1471-2334-3-13.txt:          
+./technical/biomed/1471-2334-3-13.txt:          
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:          If 
+./technical/biomed/1471-2334-3-13.txt:        
+./technical/biomed/1471-2334-3-13.txt:      
+./technical/biomed/1471-2334-3-13.txt:      
+./technical/biomed/1471-2334-3-13.txt:        Competing interests
+./technical/biomed/1471-2334-3-13.txt:      
+./technical/biomed/1471-2334-3-13.txt:    
+./technical/biomed/1471-2334-3-13.txt:  
 ```
 
 
