@@ -115,7 +115,7 @@ sophialee@sophias-air-4 docsearch % grep -r "common" ./technical/biomed/rr37.txt
 ./technical/biomed/rr37.txt:        Asthma is a common condition in general medical
 ./technical/biomed/rr73.txt:        in vivo tissue contraction, a common
 ```
-The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common" from files ```./technical/biomed/rr37.txt``` and ```./technical/biomed/rr73.txt```. The command outputs the occurrences of "common" in the specified files. 
+The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common" from files ```./technical/biomed/rr37.txt``` and ```./technical/biomed/rr73.txt```. The command outputs the occurrences of "common" in the specified files with some context. 
 
 #### Used on directory:
 ```
@@ -126,13 +126,42 @@ sophialee@sophias-air-4 docsearch % grep -r "common type" ./technical/biomed
 ./technical/biomed/gb-2002-3-3-research0011.txt:          There are three common types of values that can be
 ./technical/biomed/1471-2164-2-4.txt:        polymorphisms (SNPs), the most common type of human genetic
 ```
-The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common type" from the ```./technical/biomed``` directory. The command outputs the occurrences of "common" in the specified files. The command outputs the occurrences of "common type" in the specified directory. 
+The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common type" from the ```./technical/biomed``` directory. The command outputs the occurrences of "common" in the specified files. The command outputs the occurrences of "common type" in the specified directory with some context. 
 
 ### ```grep -c``` command 
 
-The ```grep -c``` command is used to count the number of occurrences of a character pattern in a specified file or multiple files. (Found through ```man grep```)
+The ```grep -c``` command is used to count the number of occurrences of an indicated character pattern in a file or multiple files. (Found through ```man grep```)
 
 #### Used on files:
+```
+sophialee@sophias-air-4 docsearch % grep -c "common" ./technical/biomed/rr37.txt ./technical/biomed/rr73.txt
+./technical/biomed/rr37.txt:1
+./technical/biomed/rr73.txt:1
+```
+The ```grep -c``` command is used from the ```docsearch``` directory to find the number of occurrences of the character pattern "common" from files ```./technical/biomed/rr37.txt``` and ```./technical/biomed/rr73.txt```. The command output shows that "common" appeared once in each file. 
+
+#### Used on directory:
+```
+sophialee@sophias-air-4 docsearch % grep -c "approve" -r ./technical/government/Env_Prot_Agen
+./technical/government/Env_Prot_Agen/multi102902.txt:1
+./technical/government/Env_Prot_Agen/section-by-section_summary.txt:4
+./technical/government/Env_Prot_Agen/jeffordslieberm.txt:0
+./technical/government/Env_Prot_Agen/final.txt:0
+./technical/government/Env_Prot_Agen/ctf7-10.txt:0
+./technical/government/Env_Prot_Agen/ctf1-6.txt:2
+./technical/government/Env_Prot_Agen/ro_clear_skies_book.txt:1
+./technical/government/Env_Prot_Agen/ctm4-10.txt:0
+./technical/government/Env_Prot_Agen/1-3_meth_901.txt:0
+./technical/government/Env_Prot_Agen/atx1-6.txt:3
+./technical/government/Env_Prot_Agen/tech_sectiong.txt:0
+./technical/government/Env_Prot_Agen/bill.txt:40
+./technical/government/Env_Prot_Agen/nov1.txt:0
+./technical/government/Env_Prot_Agen/tech_adden.txt:3
+```
+The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be able to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrence of "approve" in each file. 
+
+### ```grep -
+
 
 
 
