@@ -117,7 +117,7 @@ sophialee@sophias-air-4 docsearch % grep -r "common" ./technical/biomed/rr37.txt
 ```
 The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common" from files ```./technical/biomed/rr37.txt``` and ```./technical/biomed/rr73.txt```. The command outputs the occurrences of "common" in the specified files. 
 
-#### Used on directories:
+#### Used on directory:
 ```
 sophialee@sophias-air-4 docsearch % grep -r "common type" ./technical/biomed
 ./technical/biomed/1472-6807-2-2.txt:        comprehensive report available describing the common types
