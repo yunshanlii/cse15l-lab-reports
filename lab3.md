@@ -260,7 +260,7 @@ sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" -r ./technical/911report
 ./technical/911report//chapter-9.txt:                every fourth floor.
 ...
 ```
-The ```grep -v``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/911report/``` directory. The command output shows the lines of the files in ```./technical/911report/``` without the character pattern "a".
+The ```grep -v``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/911report/``` directory. The command output show lines from the files in ```./technical/911report/``` without the character pattern "a".
 
 
 
