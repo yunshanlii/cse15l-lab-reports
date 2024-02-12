@@ -158,7 +158,7 @@ sophialee@sophias-air-4 docsearch % grep -c "approve" -r ./technical/government/
 ./technical/government/Env_Prot_Agen/nov1.txt:0
 ./technical/government/Env_Prot_Agen/tech_adden.txt:3
 ```
-The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be able to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrence of "approve" in each file. 
+The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrences of "approve" in each file. 
 
 ### ```grep -v```
 The ```grep -v``` command is used to print the lines without the indicated character pattern in a file or multiple files. (Found through ```man grep```)
@@ -232,7 +232,35 @@ sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" ./technical/biomed/1471-
 ./technical/biomed/1471-2334-3-13.txt:    
 ./technical/biomed/1471-2334-3-13.txt:  
 ```
+The ```grep -v``` command is used from the ```docsearch``` directory to find the lines that do not contain the character pattern "a" from files ```./technical/biomed/1471-2490-3-2.txt``` and ```./technical/biomed/1471-2334-3-13.txt```. The command output prints the lines that do not contain "a" from the files.
 
+#### Used on directory 
+```
+#Output shortened to demonstrate functionality
+
+sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" -r ./technical/911report/
+./technical/911report//chapter-7.txt:            THE ATTACK LOOMS
+./technical/911report//chapter-7.txt:            FIRST ARRIVALS IN CALIFORNIA
+./technical/911report//chapter-7.txt:                    Diego.
+./technical/911report//chapter-7.txt:            
+./technical/911report//chapter-7.txt:            Two Weeks in Los Angeles
+./technical/911report//chapter-7.txt:            
+./technical/911report//chapter-7.txt:            
+./technical/911report//chapter-7.txt:   
+./technical/911report//chapter-9.txt:
+./technical/911report//chapter-9.txt:    
+./technical/911report//chapter-9.txt:        
+./technical/911report//chapter-9.txt:            HEROISM AND HORROR
+./technical/911report//chapter-9.txt:            PREPAREDNESS AS OF SEPTEMBER 11
+./technical/911report//chapter-9.txt:            
+./technical/911report//chapter-9.txt:            
+./technical/911report//chapter-9.txt:                of the buildings.
+./technical/911report//chapter-9.txt:            
+./technical/911report//chapter-9.txt:                to prevent smoke from rising from lower to upper portions of the building; they were
+./technical/911report//chapter-9.txt:                every fourth floor.
+...
+```
+The ```grep -v``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/911report/``` directory. The command output shows the lines of the files in ```./technical/911report/``` without the character pattern "a".
 
 
 
