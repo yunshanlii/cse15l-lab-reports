@@ -130,7 +130,7 @@ The ```grep -r``` command is used from the ```docsearch``` directory to find the
 
 ### ```grep -c``` command 
 
-The ```grep -c``` command is used to count the number of occurrences of an indicated character pattern in a file or multiple files. This command is useful to sort files by how relevant it is to a certain topic by sorting them by the number of occurrences of a certain character pattern. (Found through ```man grep```)
+The ```grep -c``` command is used to count the number of occurrences of an indicated character pattern in a file or multiple files. This command can be useful as a tool to sort files by their relevance to a certain topic by sorting them by the number of occurrences of the character pattern. (Found through ```man grep```)
 
 #### Used on files:
 ```
@@ -263,7 +263,7 @@ sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" -r ./technical/911report
 The ```grep -v``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/911report/``` directory. The command output show lines from the files in ```./technical/911report/``` without the character pattern "a".
 
 ### ```grep -n```
-The ```grep -n``` command is used to print the line numbers that contains the indicated character pattern in a file or multiple files. (Found through ```https://www.geeksforgeeks.org/grep-command-in-unixlinux/)https://www.geeksforgeeks.org/grep-command-in-unixlinux/```)
+The ```grep -n``` command is used to print the line numbers that contain the indicated character pattern in a file or multiple files. This command can be used to find the code responsible for a specific functionality in a large directory as it showcases all the occurrences of a character pattern and their file name and line number.(Found through ```https://www.geeksforgeeks.org/grep-command-in-unixlinux/)https://www.geeksforgeeks.org/grep-command-in-unixlinux/```)
 
 #### Used on files:
 ```
