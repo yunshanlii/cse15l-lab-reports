@@ -107,7 +107,7 @@ In the third while loop, ```index1``` was incorrectly incremented when ```index2
 ## Part 2
 ### ```grep -r``` command 
 
-The ```grep -r``` command is used to recursively search directories and files for an identified pattern. (Found through ```man grep```)
+The ```grep -r``` command recursively searches directories and files for an identified pattern. This command can be useful for pattern matching in data analysis to identify common patterns throughout the data. (Found through ```man grep```)
 
 #### Used on files:
 ```
@@ -130,7 +130,7 @@ The ```grep -r``` command is used from the ```docsearch``` directory to find the
 
 ### ```grep -c``` command 
 
-The ```grep -c``` command is used to count the number of occurrences of an indicated character pattern in a file or multiple files. (Found through ```man grep```)
+The ```grep -c``` command is used to count the number of occurrences of an indicated character pattern in a file or multiple files. This command is useful to sort files by how relevant it is to a certain topic by sorting them by the number of occurrences of a certain character pattern. (Found through ```man grep```)
 
 #### Used on files:
 ```
@@ -161,7 +161,7 @@ sophialee@sophias-air-4 docsearch % grep -c "approve" -r ./technical/government/
 The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrences of "approve" in each file. 
 
 ### ```grep -v```
-The ```grep -v``` command is used to print the lines without the indicated character pattern in a file or multiple files. (Found through ```man grep```)
+The ```grep -v``` command is used to print the lines without the indicated character pattern in a file or multiple files. This command can be useful as a filter tool for data analysis to find instances where a certain character pattern does not exist. (Found through ```man grep```)
 
 #### Used on files:
 ```
