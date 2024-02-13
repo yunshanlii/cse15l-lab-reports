@@ -263,7 +263,7 @@ sophialee@sophias-MacBook-Air-4 docsearch % grep -v "a" -r ./technical/911report
 The ```grep -v``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/911report/``` directory. The command output show lines from the files in ```./technical/911report/``` without the character pattern "a".
 
 ### ```grep -n```
-The ```grep -n``` command is used to print the line numbers that contain the indicated character pattern in a file or multiple files. This command can be used to find the code responsible for a specific functionality in a large directory as it showcases all the occurrences of a character pattern and their file name and line number.(Found through ```https://www.geeksforgeeks.org/grep-command-in-unixlinux/)https://www.geeksforgeeks.org/grep-command-in-unixlinux/```)
+The ```grep -n``` command is used to print the line numbers that contain the indicated character pattern in a file or multiple files. This command can be used to find the code responsible for a specific functionality in a large directory as it showcases all the occurrences of a character pattern and their file name and line number. (Found through ```https://www.geeksforgeeks.org/grep-command-in-unixlinux/)https://www.geeksforgeeks.org/grep-command-in-unixlinux/```)
 
 #### Used on files:
 ```
