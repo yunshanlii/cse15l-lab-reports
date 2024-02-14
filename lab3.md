@@ -1,4 +1,4 @@
-# Lab Report 3 - Symptoms and Failure-inducing Inputs
+# Lab Report 3 - Bugs and Commands
 ## Part 1
 ### Failure-inducing input for ListExamples merge() method:
 ```
@@ -102,7 +102,7 @@ static List<String> merge(List<String> list1, List<String> list2) {
   }
 ```
 
-In the third while loop, ```index1``` was incorrectly incremented when ```index2``` is the one that should be incremented when adding the remaining elements of ```list2``` to the ```result``` list. This mistake causes an ```out-of-memory exception``` as the while loop is never exited and the same element from ```list2``` is repeatedly added to the ```result``` list until there is no more memory in the heap.
+In the third ```while loop```, ```index1``` was incorrectly incremented when ```index2``` is the one that should be incremented when adding the remaining elements of ```list2``` to the ```result``` list. This mistake causes an ```out-of-memory exception``` as the ```while loop``` is never exited and the same element from ```list2``` is repeatedly added to the ```result``` list until there is no more memory in the heap.
 
 ## Part 2
 ### ```grep -r``` command 
@@ -126,7 +126,7 @@ sophialee@sophias-air-4 docsearch % grep -r "common type" ./technical/biomed
 ./technical/biomed/gb-2002-3-3-research0011.txt:          There are three common types of values that can be
 ./technical/biomed/1471-2164-2-4.txt:        polymorphisms (SNPs), the most common type of human genetic
 ```
-The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common type" from the ```./technical/biomed``` directory. The command outputs the occurrences of "common" in the specified files. The command outputs the occurrences of "common type" in the specified directory with some context and the name of the files it's from. 
+The ```grep -r``` command is used from the ```docsearch``` directory to find the character pattern "common type" from the ```./technical/biomed``` directory. The command outputs the occurrences of "common type" in the specified directory with some context and the name of the files it's from. 
 
 ### ```grep -c``` command 
 
@@ -158,7 +158,7 @@ sophialee@sophias-air-4 docsearch % grep -c "approve" -r ./technical/government/
 ./technical/government/Env_Prot_Agen/nov1.txt:0
 ./technical/government/Env_Prot_Agen/tech_adden.txt:3
 ```
-The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrences of "approve" in each file. 
+The ```grep -c``` command is used from the ```docsearch``` directory. It requires the use of the ```-r``` command to be used with a directory and recursively search the files in the ```./technical/government/Env_Prot_Agen``` directory. The command output shows the number of occurrences of "approve" in each file in the directory. 
 
 ### ```grep -v```
 The ```grep -v``` command is used to print the lines without the indicated character pattern in a file or multiple files. This command can be useful as a filter tool for data analysis to find instances where a certain character pattern does not exist. (Found through ```man grep```)
