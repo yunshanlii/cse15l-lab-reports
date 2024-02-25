@@ -5,8 +5,17 @@
 Keys pressed: I typed the bash ```history``` command and pressed ```<enter>```. Then I used the ```<Ctrl-R>``` command, typing in ```"ss"``` until my entire ```ieng6``` account appeared then pressed ```<enter>``` to log in. 
 
 
-## Step 5: Clone fork of repository from Github (with ```SSH``` URL)
+## Step 5: Clone fork of the repository from Github (with ```SSH``` URL)
 ![Image](lab4(2).png)
 
-Keys pressed: I navigated to the GitHub to fork the ```lab7``` repository. I pressed the big green ```< > Code``` button and went to the ```SSH``` tab, copying the link. Then I returned my terminal and typed the ```git clone``` command followed by ```<Space>``` and ```<Command-V>``` to paste the ```SSH``` fork URL. Then I pressed ```<enter>``` to fork the ```lab7``` repository.
+Keys pressed: I navigated to GitHub to fork the ```lab7``` repository. I pressed the big green ```< > Code``` button and went to the ```SSH``` tab, copying the link. Then I returned to my terminal and typed the ```git clone``` command followed by ```<Space>``` and ```<Command-V>``` to paste the ```SSH``` fork URL. Then I pressed ```<enter>``` to fork the ```lab7``` repository.
+
+## Step 6: Run the tests, demonstrating that they fail
+![Image](lab4(3).png)
+
+Keys pressed: I used the ```cd``` command followed by ```<Space>``` and ```"lab7"``` to enter the ```lab7``` directory. Then I typed ```bash test.sh``` followed by ```<enter>``` to run the tests. 
+
+
+
+
 
