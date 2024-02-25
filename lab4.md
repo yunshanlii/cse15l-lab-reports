@@ -8,5 +8,5 @@ Keys pressed: I typed the bash ```history``` command and pressed ```<enter>```. 
 ## Step 5: Clone fork of repository from Github (with ```SSH``` URL)
 ![Image](lab4(2).png)
 
-Keys pressed: I navigated to the GitHub to fork the ```lab7``` repository. I pressed the big green ```< > Code``` button and went to the ```SSH```, copying the link. Then I returned my terminal and typed the ```git clone ``` command followed by ```<Command-V>``` to paste the ```SSH``` fork URL. Then I pressed ```<enter>``` to fork the ```lab7``` repository.
+Keys pressed: I navigated to the GitHub to fork the ```lab7``` repository. I pressed the big green ```< > Code``` button and went to the ```SSH``` tab, copying the link. Then I returned my terminal and typed the ```git clone``` command followed by ```<Space>``` and ```<Command-V>``` to paste the ```SSH``` fork URL. Then I pressed ```<enter>``` to fork the ```lab7``` repository.
 
