@@ -13,7 +13,15 @@ Keys pressed: I navigated to GitHub to fork the ```lab7``` repository. I pressed
 ## Step 6: Run the tests, demonstrating that they fail
 ![Image](lab4(3).png)
 
-Keys pressed: I used the ```cd``` command followed by ```<Space>``` and ```"lab7"``` to enter the ```lab7``` directory. Then I typed ```bash test.sh``` followed by ```<enter>``` to run the tests. 
+Keys pressed: I used the ```cd``` command followed by ```<space>``` and ```"lab7"``` to enter the ```lab7``` directory. Then I typed ```bash test.sh``` followed by ```<enter>``` to run the tests. 
+
+## Step 7: Edit the code file to fix the failing test
+![Image](lab4(4).png)
+
+Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"ListExamples.java"``` and ```<enter>``` to open the ```ListExamples.java``` file with ```vim```. Then I press ```<up>```
+
+
+
 
 
 
