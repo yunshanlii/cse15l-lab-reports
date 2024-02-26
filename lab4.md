@@ -18,7 +18,7 @@ Keys pressed: I used the ```cd``` command followed by ```<space>``` and ```"lab7
 ## Step 7: Edit the code file to fix the failing test
 ![Image](lab4(4).png)
 
-Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"ListExamples.java"``` and ```<enter>``` to open the ```ListExamples.java``` file with ```vim```. Then I press ```<up>```
+Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"ListExamples.java"``` and ```<enter>``` to open the ```ListExamples.java``` file with ```vim```. Then I press ```<up>``` ```<up>``` ```<up>``` ```<up>``` ```<up>``` ```<up>``` to navigate my cursor to the error. Next, I use the ```<Ctrl-A>``` to navigate my cursor to the end of ```"index1"```. Next, I use the ```cl``` command to enter ```INSERT``` mode and delete the ```"1"``` on the right of the cursor. I then enter ```'2'``` to fix the bug it the code and use ```<Ctrl-C>``` to exit ```INSERT``` mode and return to normal mode. ```:wq``` is used to save the changes made to the ```ListExamples.java``` file and exit. 
 
 
 
