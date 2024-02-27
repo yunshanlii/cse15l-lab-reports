@@ -8,12 +8,12 @@ Keys pressed: I typed the bash ```history``` command and pressed ```<enter>```. 
 ## Step 5: Clone fork of the repository from Github (with ```SSH``` URL)
 ![Image](lab4(2).png)
 
-Keys pressed: I navigated to GitHub to fork the ```lab7``` repository. I pressed the big green ```< > Code``` button and went to the ```SSH``` tab, copying the link. Then I returned to my terminal and typed the ```git clone``` command followed by ```<Space>``` and ```<Command-V>``` to paste the ```SSH``` fork URL. Then I pressed ```<enter>``` to fork the ```lab7``` repository.
+Keys pressed: I navigated to GitHub and pressed the ```Fork``` button on the top-right followed by the green ```Create fork``` button to fork the ```lab7``` repository. Next, I pressed the big green ```< > Code``` button and went to the ```SSH``` tab. Using ```<Command-C>```, I copied the ```SSH``` link. Then I returned to my terminal and typed the ```git clone``` command followed by ```<Space>``` and ```<Command-V>``` to paste the ```SSH``` fork URL. Then I pressed ```<enter>``` to clone the ```lab7``` repository.
 
 ## Step 6: Run the tests, demonstrating that they fail
 ![Image](lab4(3).png)
 
-Keys pressed: I used the ```cd``` command followed by ```<space>``` and ```"lab7"``` to enter the ```lab7``` directory. Then I typed ```bash test.sh``` followed by ```<enter>``` to run the tests. 
+Keys pressed: I am currently in the ```./``` directory of my terminal. I used the ```cd``` command followed by ```<space>``` and ```"lab7"``` to enter the ```lab7``` directory. Then I typed ```bash test.sh``` followed by ```<enter>``` to run the tests. 
 
 ## Step 7: Edit the code file to fix the failing test
 ![Image](lab4(4).png)
