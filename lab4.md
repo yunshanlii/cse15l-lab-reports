@@ -8,7 +8,7 @@ Keys pressed: I typed the bash ```history``` command and pressed ```<enter>```. 
 ## Step 5: Clone fork of the repository from Github (with ```SSH``` URL)
 ![Image](lab4(fork).png)
 
-Keys pressed: I navigated to GitHub and pressed the ```Fork``` button on the top-right followed by the green ```Create fork``` button to fork the ```lab7``` repository. Next, I pressed the big green ```< > Code``` button and went to the ```SSH``` tab. Using ```<Command-C>```, I copied the ```SSH``` link. 
+Keys pressed: I navigated to ```GitHub``` and pressed the ```Fork``` button on the top-right followed by the green ```Create fork``` button to fork the ```lab7``` repository. Next, I pressed the big green ```< > Code``` button and went to the ```SSH``` tab. Using ```<Command-C>```, I copied the ```SSH``` link. 
 
 ![Image](lab4(2).png)
 
@@ -22,7 +22,7 @@ Keys pressed: I am currently in the ```./``` directory of my terminal. I used th
 ## Step 7: Edit the code file to fix the failing test
 ![Image](lab4(4).png)
 
-Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"ListExamples.java"``` and ```<enter>``` to open the ```ListExamples.java``` file with ```vim```. I then use the ```"</>"``` command followed by ```"index"``` to search for occurrences of the word ```"index"```. I use the sequence of ```<n><n><n><n><n><n><n><n><n><n>``` to navigate down the instances of ```"index"``` until I find the location of the error. Next, I use the ```<Ctrl-A>``` to navigate my cursor to the end of ```"index1"``` and it increments the last element from ```"1"``` to ```'2'``` to fix the bug in the code. Next, ```:wq``` is used to save the changes made to the ```ListExamples.java``` file and exit ```vim```. 
+Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"ListExamples.java"``` and ```<enter>``` to open the ```ListExamples.java``` file with ```vim```. I then use the ```</>``` command followed by ```"index"``` to search for occurrences of the word ```"index"```. I use the sequence of ```<n><n><n><n><n><n><n><n><n><n>``` to navigate down the instances of ```"index"``` until I find the location of the error. Next, I use the ```<Ctrl-A>``` to navigate my cursor to the end of ```"index1"``` and it increments the last element from ```"1"``` to ```"2"``` to fix the bug in the code. Next, ```:wq``` is used to save the changes made to the ```ListExamples.java``` file and exit ```vim```. 
 
 ## Step 8: Run the tests, demonstrating they succeed
 ![Image](lab4(5).png)
@@ -32,7 +32,7 @@ Keys pressed: Similar to step 6, I typed ```bash test.sh``` followed by ```<ente
 ## Step 9: Commit and push to GitHub
 ![Image](lab4(6).png)
 
-Keys pressed: To have my changes reflected in my ```GitHub``` repository, I first use the ```"git add"``` command followed by ```"List"``` ```<Tab>``` ```<Enter>```(```ListExamples.java``` is auto-filled) to add the altered ```ListExamples.java``` file to the commit log. Next, I use ```"git commit"``` ```<Enter>``` to commit the changes I made. 
+Keys pressed: To have my changes reflected in my ```GitHub``` repository, I first use the ```git add``` command followed by ```"List"``` ```<Tab>``` ```<Enter>```(```ListExamples.java``` is auto-filled) to add the altered ```ListExamples.java``` file to the commit log. Next, I use ```git commit``` ```<Enter>``` to commit the changes I made. 
 
 ![Image](lab4(7).png)
 
@@ -40,7 +40,7 @@ Keys pressed: Next a commit message is prompted in ```vim```. I use ```<CTRL-i>`
 
 ![Image](lab4(8).png)
 
-Keys pressed: I used the ```"git push"``` command followed by ```<Enter>``` to push the commit to ```GitHub```. 
+Keys pressed: I used the ```git push``` command followed by ```<Enter>``` to push the commit to ```GitHub```. 
 
 ![Image](lab4(9).png)
 
