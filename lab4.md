@@ -34,6 +34,10 @@ Keys pressed: Similar to step 6, I typed ```bash test.sh``` followed by ```<ente
 
 Keys pressed: To have my changes reflected in my ```GitHub``` repository, I first use the ```"git add"``` command followed by ```"List"``` ```<Tab>``` ```<Enter>```(```ListExamples.java``` is auto-filled) to add the altered ```ListExamples.java``` file to the commit log. Next, I use ```"git commit"``` ```<Enter>``` to commit the changes I made. 
 
+![Image](lab4(7).png)
+
+Keys pressed: Next a commit message is prompted in ```vim```. I use ```<CTRL-i>``` to enter ```INSERT``` mode and enter the commit message ```"Fixed bug in ListExamples.java"```. Then, I use the ```<Esc>``` key to return to ```Normal``` mode and use ```:wq``` to save and exit. 
+
 
 
 
