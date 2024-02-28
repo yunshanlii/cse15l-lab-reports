@@ -36,8 +36,11 @@ Keys pressed: To have my changes reflected in my ```GitHub``` repository, I firs
 
 ![Image](lab4(7).png)
 
-Keys pressed: Next a commit message is prompted in ```vim```. I use ```<CTRL-i>``` to enter ```INSERT``` mode and enter the commit message ```"Fixed bug in ListExamples.java"```. Then, I use the ```<Esc>``` key to return to ```Normal``` mode and use ```:wq``` to save and exit. 
+Keys pressed: Next a commit message is prompted in ```vim```. I use ```<CTRL-i>``` to enter ```INSERT``` mode and enter the commit message ```"Fixed bug in ListExamples.java"```. Then, I use the ```<Esc>``` key to return to ```Normal``` mode and use ```:wq``` ```<Enter>``` to save and exit. 
 
+![Image](lab4(8).png)
+
+Keys pressed: I used the ```"git push"``` command followed by ```<Enter>``` to push the commit to GitHub. 
 
 
 
