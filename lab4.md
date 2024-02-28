@@ -22,7 +22,7 @@ Keys pressed: I am currently in the ```./``` directory of my terminal. I used th
 ## Step 7: Edit the code file to fix the failing test
 ![Image](lab4(4).png)
 
-Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"ListExamples.java"``` and ```<enter>``` to open the ```ListExamples.java``` file with ```vim```. I then use the ```"</>"``` command followed by ```"index"``` to search for occurrences of the word ```"index"```. I use the sequence of ```<n><n><n><n><n><n><n><n><n><n>``` to navigate down the instances of ```"index"``` until I find the location of the error. Next, I use the ```<Ctrl-A>``` to navigate my cursor to the end of ```"index1"```, where the error is located. Next, I use the ```cl``` command to enter ```INSERT``` mode and delete the ```"1"``` on the left of the cursor. I then enter ```'2'``` to fix the bug in the code and use ```<Esc>``` to exit ```INSERT``` mode and return to normal mode. ```:wq``` is used to save the changes made to the ```ListExamples.java``` file and exit ```vim```. 
+Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"ListExamples.java"``` and ```<enter>``` to open the ```ListExamples.java``` file with ```vim```. I then use the ```"</>"``` command followed by ```"index"``` to search for occurrences of the word ```"index"```. I use the sequence of ```<n><n><n><n><n><n><n><n><n><n>``` to navigate down the instances of ```"index"``` until I find the location of the error. Next, I use the ```<Ctrl-A>``` to navigate my cursor to the end of ```"index1"``` and it increments the last element from ```"1"``` to ```'2'``` to fix the bug in the code. Next, I use ```<Esc>``` to exit ```INSERT``` mode and return to normal mode. ```:wq``` is used to save the changes made to the ```ListExamples.java``` file and exit ```vim```. 
 
 ## Step 8: Run the tests, demonstrating they succeed
 ![Image](lab4(5).png)
@@ -30,7 +30,9 @@ Keys pressed: I first use the ```vim``` command followed by ```<Space>``` ```"Li
 Keys pressed: Similar to step 6, I typed ```bash test.sh``` followed by ```<enter>``` to run the tests. 
 
 ## Step 9: Commit and push to GitHub
+![Image](lab4(6).png)
 
+Keys pressed: To have my changes reflected in my ```GitHub``` repository, I first use the ```"git add"``` command followed by ```"List"``` ```<Tab>``` ```<Enter>```(```ListExamples.java``` is auto-filled) to add the altered ```ListExamples.java``` file to the commit log. Next, I use ```"git commit"``` ```<Enter>``` to commit the changes I made. 
 
 
 
