@@ -40,8 +40,11 @@ Keys pressed: Next a commit message is prompted in ```vim```. I use ```<CTRL-i>`
 
 ![Image](lab4(8).png)
 
-Keys pressed: I used the ```"git push"``` command followed by ```<Enter>``` to push the commit to GitHub. 
+Keys pressed: I used the ```"git push"``` command followed by ```<Enter>``` to push the commit to ```GitHub```. 
 
+![Image](lab4(9).png)
+
+Now the changes to ```ListExamples.java``` and the commit message is reflected on ```GitHub```.
 
 
 
