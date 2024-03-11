@@ -19,7 +19,7 @@ In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPA
 
 ### Re:Re: List-Example-Grader HELP!!!
 ### Student: Keroppi 
-Thank you for the suggestion! I found the ```junit-output.txt``` file in the ```list-examples-grader/grading-area``` directory. The file shows:
+Thank you for the suggestion! I found the ```junit-output.txt``` file in the ```/home/list-examples-grader/grading-area``` directory. The file shows:
 ![Image](lab5(2).png)
 Now I know that the ```TestListExamples.java``` ```JUnit``` test file is not found. However, as you can see in the sidebar, I have the ```TestListExamples.java``` there. Why is it not working?
 
@@ -74,6 +74,17 @@ Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script which I
 ### ```grade.sh``` after fixing the bug
 
 ![Image](lab5(6).png)
+
+### Full command line ran to trigger the bug
+The bug is triggered by running ```bash grade.sh``` in the terminal with a link to a git repository from the week 6 lab sample submissions that is supposed to pass all the tests.
+
+![Image](lab5(1).png)
+
+### Description of what to edit to fix the bug
+The bug came from a mismatch between the ```CPATH``` the ```java``` command is ran with and the location of the ```TestListExamples.java``` file that contains the ```JUnit``` tests. The ```CPATH``` is ```.:./lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:``` which only searches the current working directory of ```/home/list-examples-grader/grading-area``` while the ```TestListExamples.java``` file is in the parent directory (```/home/list-examples-grader/```). Therefore, it could not be found.
+
+A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command and copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the ```CPATH```.
+
 
 
 
