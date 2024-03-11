@@ -1,5 +1,5 @@
 # Lab Report 5 - Putting it All Together
-## Step 1 - Debugging Scenario
+## Part 1 - Debugging Scenario
 ---
 ### List-Example-Grader HELP!!!
 ### Student: Keroppi 
@@ -75,6 +75,10 @@ Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script which I
 
 ![Image](lab5(6).png)
 
+### ```TestListExamples.java``` Set-up (no changes were made)
+![Image](lab5(7).png)
+
+
 ### Full command line ran to trigger the bug
 The bug is triggered by running ```bash grade.sh``` in the terminal with a link to a git repository from the week 6 lab sample submissions that is supposed to pass all the tests.
 
@@ -85,8 +89,7 @@ The bug came from a mismatch between the ```CPATH``` the ```java``` command is r
 
 A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the ```CPATH```.
 
-
-
+## Part 2 - Reflection
 
 
 
