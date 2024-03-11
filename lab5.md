@@ -83,7 +83,7 @@ The bug is triggered by running ```bash grade.sh``` in the terminal with a link 
 ### Description of what to edit to fix the bug
 The bug came from a mismatch between the ```CPATH``` the ```java``` command is ran with and the location of the ```TestListExamples.java``` file that contains the ```JUnit``` tests. The ```CPATH``` is ```.:./lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:``` which only searches the current working directory of ```/home/list-examples-grader/grading-area``` while the ```TestListExamples.java``` file is in the parent directory (```/home/list-examples-grader/```). Therefore, it could not be found.
 
-A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command and copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the ```CPATH```.
+A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the ```CPATH```.
 
 
 
