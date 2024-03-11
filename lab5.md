@@ -35,7 +35,34 @@ Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script which I
 
 ![Image](lab5(4).png)
 
-### Set-up
+## Set-up
+### File & directory structure
+```
+    |- grading-area 
+		|- lib
+        	|- hamcrest-core-1.3.jar
+        	|- junit-4.13.2.jar
+        |- compile.txt
+        |- IsMoon.class
+		|- junit-output.txt
+		|- ListExamples.class
+		|- ListExamples.java
+		|- StringChecker.class
+    |- lib
+        |- hamcrest-core-1.3.jar
+        |- junit-4.13.2.jar
+	|- student-submission 
+		|- ListExamples.java
+	|- grade.sh 
+	|- TestListExamples.java
+```
+### ```grade.sh``` before fixing the bug
+
+![Image](lab5(5).png)
+
+### ```grade.sh``` after fixing the bug
+
+![Image](lab5(6).png)
 
 
 
