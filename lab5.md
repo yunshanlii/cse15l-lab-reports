@@ -9,7 +9,7 @@ Hello! I am working on my ```List-Examples-Grader``` and ran into a problem. I h
 ### TA: Badtz-Maru
 Hi! Although it is hard to tell from your screenshot, redirecting the JUnit output to another file is a useful tool to help you debug. Then, you will be able to see if the tests passed or if something went wrong.
 
-In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` command to redirect the JUnit output to a file called ```junit-output.txt``` in the ```list-examples-grader/grading-area``` directory. See if you have this command or add it and check the contents in the file to gain more insight into the bug in your code. 
+In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` command to redirect the JUnit output to a file called ```junit-output.txt``` in the ```/home/list-examples-grader/grading-area``` directory. See if you have this command or add it and check the contents in the file to gain more insight into the bug in your code. 
 
 ## Re:Re:List-Example-Grader HELP!!!
 ### Student: Keroppi 
@@ -19,6 +19,10 @@ Now I know that the ```TestListExamples.java``` JUnit test file is not found. Ho
 
 ## Re:Re:Re:List-Example-Grader HELP!!!
 ### TA: Badtz-Maru
+
+Your ```TestListExamples.java``` file is in the ```/home/list-examples-grader``` directory. Which directory are you running the 
+
+
 Now that the problem has been identified to be that the ```TestListExamples.java``` file is not found, it is highly likely due to a mismatch in your ```CPATH``` in the ```grade.sh``` script and the actual location of your ```TestListExamples.java``` file. Make sure that your ```CPATH``` matches the location of the ```TestListExamples.java``` file so your test file can be found and the ```JUnit``` tests can be run.
 
 I see in your directory structure that ```TestListExamples.java``` is in the ```list-examples-grader``` directory and outside of the ```list-examples-grader/grading-area``` directory. If your ```CPATH``` in the ```grade.sh``` script is looking for 
