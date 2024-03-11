@@ -8,7 +8,7 @@ Hello! I am working on my ```List-Examples-Grader``` and ran into a problem. I h
 ### TA: Badtz-Maru
 Hi! Although it is hard to tell from your screenshot, redirecting the JUnit output to another file is a useful tool to help you debug. Then, you will be able to see if the tests passed or if something went wrong.
 
-In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` command to redirect the JUnit output to a file called ```junit-output.txt```. See if you have this command or add it and check the contents in the file to gain more insight into the bug in your code. 
+In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` command to redirect the JUnit output to a file called ```junit-output.txt``` in the ```list-examples-grader/grading-area``` directory. See if you have this command or add it and check the contents in the file to gain more insight into the bug in your code. 
 
 
 
