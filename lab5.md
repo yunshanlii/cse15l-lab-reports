@@ -25,10 +25,13 @@ I noticed that your ```TestListExamples.java``` file is in the ```/home/list-exa
 ## Re:Re:Re:Re: List-Example-Grader HELP!!!
 ### Student: Keroppi 
 Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script which I am running from the ```/home/list-examples-grader/grading-area``` directory and realized that the ```CPATH``` I provided (```.:./lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:```) is only searching the current working directory ```/home/list-examples-grader/grading-area``` for the ```TestListExamples.java``` file. However, my ```TestListExamples.java``` file is stored in the parent directory. Therefore, it could not be found. I fixed this error by using the ```cp TestListExamples.java grading-area``` command in my ```grade.sh``` file to copy the ```TestListExamples.java``` file into the ```grading-area``` directory before I ran the ```java``` command. 
-Now the content of ```junit-output.txt``` shows that the tests passed and ran:
+
+#### Now the content of ```junit-output.txt``` shows that the tests passed and ran:
+
 ![Image](lab5(3).png)
 
-And the score is out of 3:
+#### And the score is out of 3:
+
 ![Image](lab5(4).png)
 
 
