@@ -13,7 +13,8 @@ In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPA
 
 ## Re:Re:List-Example-Grader HELP!!!
 ### Student: Keroppi 
-Thank you so much! I found the ```junit-output.txt``` file in the ```list-examples-grader/grading-area``` directory. The ```junit-output.txt``` file shows:
+Thank you so much! I found the ```junit-output.txt``` file in the ```list-examples-grader/grading-area``` directory. The file shows:
+![Image](lab5(2).png)
 
 
 
