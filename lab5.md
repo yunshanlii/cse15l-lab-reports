@@ -15,6 +15,15 @@ In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPA
 ### Student: Keroppi 
 Thank you so much! I found the ```junit-output.txt``` file in the ```list-examples-grader/grading-area``` directory. The file shows:
 ![Image](lab5(2).png)
+Now I know that the ```TestListExamples.java``` JUnit test file is not found. However, as you can see in the sidebar, I have the ```TestListExamples.java``` there. Why is it not working?
+
+## Re:Re:Re:List-Example-Grader HELP!!!
+### TA: Badtz-Maru
+Now that the problem has been identified to be that the ```TestListExamples.java``` file is not found, it is highly likely due to a mismatch in your ```CPATH``` in the ```grade.sh``` script and the actual location of your ```TestListExamples.java``` file. Make sure that your ```CPATH``` matches the location of the ```TestListExamples.java``` file so your test file can be found and the ```JUnit``` tests can be run.
+
+I see in your directory structure that ```TestListExamples.java``` is in the ```list-examples-grader``` directory and outside of the ```list-examples-grader/grading-area``` directory. If your ```CPATH``` in the ```grade.sh``` script is looking for 
+
+
 
 
 
