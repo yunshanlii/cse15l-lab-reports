@@ -76,7 +76,7 @@ Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script which I
 ![Image](lab5(6).png)
 
 ### ```TestListExamples.java``` Set-up (no changes were made)
-![Image](lab5(7).png)
+![Image](lab5(8).png)
 
 
 ### Full command line ran to trigger the bug
@@ -90,6 +90,7 @@ The bug came from a mismatch between the ```CPATH``` the ```java``` command is r
 A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the ```CPATH```.
 
 ## Part 2 - Reflection
+In the second half of this quarter I learned more about ```bash``` and ```vim```. I thought it is really cool that I can make an auto grader using ```bash``` and output the score depending on the number of ```JUnit``` tests the submission code passed. The ability to redirect standard output and standard error is always very useful (as seen in my debugging scenario). I am still getting used to the ```vim``` commands, but I really like how easy it makes editing files from the command line. In addition, I can now use ```git``` more fluently and ```add```, ```commit```, and ```push``` my changes to be reflected on the commit log. 
 
 
 
