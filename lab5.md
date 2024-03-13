@@ -3,7 +3,7 @@
 ---
 ### List-Example-Grader HELP!!!
 ### Student: Keroppi 
-Hello! I am working on my ```List-Examples-Grader``` and ran into a problem. I have 3 test cases in my ```TestListExamples.java``` file. However, when I run ```bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected```, which I got from the week 6 lab sample submissions, the score is always out of 1 instead of 3. I think this might have something to do with my ```JUnit``` test in the ```TestListExamples.java``` or how I cropped the ```JUnit``` results in my ```grade.sh``` script, but nothing I tried is fixing the bug. What is wrong with my code? I included the output symptom below. 
+Hello! I am working on my ```list-examples-grader``` and ran into a problem. I have 3 test cases in my ```TestListExamples.java``` file. However, when I run ```bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected```, which I got from the week 6 lab sample submissions, the score is always out of 1 instead of 3. I think this might have something to do with my ```JUnit``` test in the ```TestListExamples.java``` or how I cropped the ```JUnit``` results in my ```grade.sh``` script, but nothing I tried is fixing the bug. What is wrong with my code? I included the output symptom below. 
 
 ![Image](lab5(1).png)
 
@@ -13,7 +13,7 @@ Hello! I am working on my ```List-Examples-Grader``` and ran into a problem. I h
 ### TA: Badtz-Maru
 Hi! Although it is hard to tell from your screenshot, redirecting the ```JUnit``` output to another file when you run the ```java``` command is a useful tool to help you debug. Then, you will be able to see if the tests ran or if something went wrong.
 
-In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` command to redirect the ```JUnit``` output to a file called ```junit-output.txt``` in the ```/home/list-examples-grader/grading-area``` directory. See if you have this command or add it and check the contents in the file to gain more insight into the bug in your code. 
+In the ```list-examples-grader``` we made in class, we used the ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` command to redirect the ```JUnit``` output to a file called ```junit-output.txt``` in the ```/home/list-examples-grader/grading-area``` directory. See if you have this command or add it and check the contents in the file to gain more insight into the bug in your code. 
 
 ---
 
@@ -28,13 +28,13 @@ Now I know that the ```TestListExamples.java``` ```JUnit``` test file is not fou
 ### Re:Re:Re: List-Example-Grader HELP!!!
 ### TA: Badtz-Maru
 
-I noticed that your ```TestListExamples.java``` file is in the ```/home/list-examples-grader``` directory while your ```lib``` directory is in the  ```/home/list-examples-grader/grading-area``` directory. Make sure the class path of the ```CPATH``` variable in your ```grade.sh``` matches the location of the ```TestListExamples.java``` file so your test file can be found and the ```JUnit``` tests can run.
+I noticed that your ```TestListExamples.java``` file is in the ```/home/list-examples-grader``` directory while your ```lib``` directory is in the  ```/home/list-examples-grader/grading-area``` directory. Remember, if a class path is not provided, the ```java TestListExamples``` command only searches the current working directory for the ```TestListExamples.java``` file. Make sure your ```TestListExamples.java``` is in the same directory as the one you run the ```java``` command in your ```grade.sh``` from.
 
 ---
 
 ### Re:Re:Re:Re: List-Example-Grader HELP!!!
 ### Student: Keroppi 
-Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script, which puts me in the ```/home/list-examples-grader/grading-area``` directory, and realized that the ```CPATH``` I provided (```.:./lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:```) is only searching the current working directory ```/home/list-examples-grader/grading-area``` for the ```TestListExamples.java``` file. However, my ```TestListExamples.java``` file is stored in the parent directory. Therefore, it could not be found. I fixed this error by using the ```cp TestListExamples.java grading-area``` command in my ```grade.sh``` file to copy the ```TestListExamples.java``` file into the ```grading-area``` directory before I ran the ```java``` command. 
+Thank you so much! I realized that I was running the ```java -cp $CPATH org.junit.runner.JUnitCore -cp TestListExamples.java > junit-output.txt``` command in my ```grade.sh``` script from the ```/home/list-examples-grader/grading-area``` directory, while my ```TestListExamples.java``` file is in the parent directory of ```/home/list-examples-grader```. Therefore, the mismatch between my current working directory and the directory of the ```TestListExamples.java``` file caused it not to be found by the ```java``` command. I fixed this error by using the ```cp TestListExamples.java grading-area``` command in my ```grade.sh``` file to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory before I ran the ```java``` command. 
 
 #### Now the content of ```junit-output.txt``` shows that the tests passed and ran:
 
@@ -49,23 +49,24 @@ Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script, which 
 ## Set-up
 ### File & directory structure
 ```
+|- list-examples-grader
     |- grading-area 
-		|- lib
-        	|- hamcrest-core-1.3.jar
-        	|- junit-4.13.2.jar
+        |- lib
+            |- hamcrest-core-1.3.jar
+            |- junit-4.13.2.jar
         |- compile.txt
         |- IsMoon.class
-		|- junit-output.txt
-		|- ListExamples.class
-		|- ListExamples.java
-		|- StringChecker.class
+        |- junit-output.txt
+        |- ListExamples.class
+        |- ListExamples.java
+        |- StringChecker.class
     |- lib
         |- hamcrest-core-1.3.jar
         |- junit-4.13.2.jar
-	|- student-submission 
-		|- ListExamples.java
-	|- grade.sh 
-	|- TestListExamples.java
+    |- student-submission
+        |- ListExamples.java
+    |- grade.sh 
+    |- TestListExamples.java
 ```
 ### ```grade.sh``` before fixing the bug
 
@@ -80,14 +81,16 @@ Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script, which 
 
 
 ### Full command line ran to trigger the bug
-The bug is triggered by running ```bash grade.sh``` in the terminal with a link to a git repository ```https://github.com/ucsd-cse15l-f22/list-methods-corrected``` from the week 6 lab sample submissions that is supposed to pass all the tests.
+The bug is triggered by running ```bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected``` in the terminal with a link to a git repository.
+
+The git link ```https://github.com/ucsd-cse15l-f22/list-methods-corrected``` is from the week 6 lab sample submissions and is supposed to pass all the tests.
 
 ![Image](lab5(1).png)
 
 ### Description of what to edit to fix the bug
 The bug came from a mismatch between the classpath ```CPATH``` the ```java``` command is run with and the location of the ```TestListExamples.java``` file that contains the ```JUnit``` tests. The ```CPATH``` is ```.:./lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:``` which only searches the current working directory of ```/home/list-examples-grader/grading-area``` while the ```TestListExamples.java``` file is in the parent directory (```/home/list-examples-grader/```). Therefore, it could not be found.
 
-A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command in ```grade.sh``` to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the class path ```CPATH```.
+A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command in ```grade.sh``` to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the classpath ```CPATH```.
 
 ## Part 2 - Reflection
 
