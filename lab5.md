@@ -11,7 +11,7 @@ Hello! I am working on my ```List-Examples-Grader``` and ran into a problem. I h
 
 ### Re: List-Example-Grader HELP!!!
 ### TA: Badtz-Maru
-Hi! Although it is hard to tell from your screenshot, redirecting the JUnit output to another file is a useful tool to help you debug. Then, you will be able to see if the tests passed or if something went wrong.
+Hi! Although it is hard to tell from your screenshot, redirecting the ```JUnit``` output to another file when you run the ```java``` command is a useful tool to help you debug. Then, you will be able to see if the tests passed or if something went wrong.
 
 In the ```List-Examples-Grader``` we made in class, we used the ```java -cp $CPATH org.junit.runner.JUnitCore TestListExamples > junit-output.txt``` command to redirect the ```JUnit``` output to a file called ```junit-output.txt``` in the ```/home/list-examples-grader/grading-area``` directory. See if you have this command or add it and check the contents in the file to gain more insight into the bug in your code. 
 
@@ -28,7 +28,7 @@ Now I know that the ```TestListExamples.java``` ```JUnit``` test file is not fou
 ### Re:Re:Re: List-Example-Grader HELP!!!
 ### TA: Badtz-Maru
 
-I noticed that your ```TestListExamples.java``` file is in the ```/home/list-examples-grader``` directory while your ```lib``` directory is in the  ```/home/list-examples-grader/grading-area``` directory. Make sure the path of the ```CPATH``` in your ```grade.sh``` matches the location of the ```TestListExamples.java``` file so your test file can be found and the ```JUnit``` tests can run.
+I noticed that your ```TestListExamples.java``` file is in the ```/home/list-examples-grader``` directory while your ```lib``` directory is in the  ```/home/list-examples-grader/grading-area``` directory. Make sure the class path of the ```CPATH``` variable in your ```grade.sh``` matches the location of the ```TestListExamples.java``` file so your test file can be found and the ```JUnit``` tests can run.
 
 ---
 
@@ -80,17 +80,18 @@ Thank you so much! I checked the ```CPATH``` in my ```grade.sh``` script which I
 
 
 ### Full command line ran to trigger the bug
-The bug is triggered by running ```bash grade.sh``` in the terminal with a link to a git repository from the week 6 lab sample submissions that is supposed to pass all the tests.
+The bug is triggered by running ```bash grade.sh``` in the terminal with a link to a git repository ```https://github.com/ucsd-cse15l-f22/list-methods-corrected``` from the week 6 lab sample submissions that is supposed to pass all the tests.
 
 ![Image](lab5(1).png)
 
 ### Description of what to edit to fix the bug
-The bug came from a mismatch between the ```CPATH``` the ```java``` command is ran with and the location of the ```TestListExamples.java``` file that contains the ```JUnit``` tests. The ```CPATH``` is ```.:./lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:``` which only searches the current working directory of ```/home/list-examples-grader/grading-area``` while the ```TestListExamples.java``` file is in the parent directory (```/home/list-examples-grader/```). Therefore, it could not be found.
+The bug came from a mismatch between the classpath ```CPATH``` the ```java``` command is run with and the location of the ```TestListExamples.java``` file that contains the ```JUnit``` tests. The ```CPATH``` is ```.:./lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar:``` which only searches the current working directory of ```/home/list-examples-grader/grading-area``` while the ```TestListExamples.java``` file is in the parent directory (```/home/list-examples-grader/```). Therefore, it could not be found.
 
-A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the ```CPATH```.
+A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command in ```grade.sh``` to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the location indicated by the class path ```CPATH```.
 
 ## Part 2 - Reflection
-In the second half of this quarter I learned more about ```bash``` and ```vim```. I thought it is really cool that I can make an auto grader using ```bash``` and output the score depending on the number of ```JUnit``` tests the submission code passed. The ability to redirect standard output and standard error is always very useful (as seen in my debugging scenario). I am still getting used to the ```vim``` commands, but I really like how easy it makes editing files from the command line. In addition, I can now use ```git``` more fluently and ```add```, ```commit```, and ```push``` my changes to be reflected on the commit log. 
+
+In the second half of this quarter, I learned more about ```bash``` and ```vim```. I thought it is really cool that I can make an auto grader using ```bash``` and output the score depending on the number of ```JUnit``` tests the submission code passed. The ability to redirect standard output and standard error is always very useful (as seen in my debugging scenario). I am still getting used to the ```vim``` commands, but I really like how easy it makes editing files from the command line. In addition, I can now use ```git``` more fluently and ```add```, ```commit```, and ```push``` my changes to be reflected on the commit log. 
 
 
 
