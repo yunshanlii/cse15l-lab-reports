@@ -78,7 +78,7 @@ The git link ```https://github.com/ucsd-cse15l-f22/list-methods-corrected``` is 
 ![Image](lab5(1).png)
 
 ### Description of what to edit to fix the bug
-The bug came from the ```TestListExamples.java``` file, which contains the ```JUnit``` tests, not being in the current working directory the ```java``` command is running from. Since no classpath is offered to the ```java``` command for the  ```TestListExamples.java``` file, it searches the current working directory of ```/home/list-examples-grader/grading-area```. However, the  ```TestListExamples.java``` file is in the parent directory of ```/home/list-examples-grader```. Therefore, the test file could not be found by the ```java -cp $CPATH org.junit.runner.JUnitCore -cp TestListExamples.java > junit-output.txt``` command.
+The bug came from the ```TestListExamples.java``` file, which contains the ```JUnit``` tests, not being in the current working directory the ```java``` command is running from. Since no classpath is offered to the ```java``` command for the  ```TestListExamples.java``` file in ```grade.sh```, it searches the current working directory of ```/home/list-examples-grader/grading-area```. However, the  ```TestListExamples.java``` file is in the parent directory of ```/home/list-examples-grader```. Therefore, the test file could not be found by the ```java -cp $CPATH org.junit.runner.JUnitCore -cp TestListExamples.java > junit-output.txt``` command.
 
 A solution to this issue is to use the ```cp TestListExamples.java grading-area``` command in ```grade.sh``` to copy the ```TestListExamples.java``` file into the ```/home/list-examples-grader/grading-area``` directory so it can be found in the current working directory where the ```java``` command in ran from.
 
