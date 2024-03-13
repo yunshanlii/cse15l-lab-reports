@@ -50,16 +50,6 @@ Thank you so much! I realized that I was running the ```java -cp $CPATH org.juni
 ### File & directory structure
 ```
 |- list-examples-grader
-    |- grading-area 
-        |- lib
-            |- hamcrest-core-1.3.jar
-            |- junit-4.13.2.jar
-        |- compile.txt
-        |- IsMoon.class
-        |- junit-output.txt
-        |- ListExamples.class
-        |- ListExamples.java
-        |- StringChecker.class
     |- lib
         |- hamcrest-core-1.3.jar
         |- junit-4.13.2.jar
